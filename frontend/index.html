@@ -1,13 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>File upload frontend</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <!-- <div>
+                <h1>Using HTML</h1>
+                <form action="/file/upload" enctype="multipart/form-data">
+                    <input type="file" />
+                    <input type="submit" />
+                </form>
+            </div> -->
+      <div>
+        <h1>Using Javascript</h1>
+        <input type="file" id="file-input" accept="image/*,video/*" />
+        <!-- <button id="upload-button">Upload</button> -->
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
