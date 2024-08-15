@@ -11,7 +11,7 @@ fileInput.addEventListener("change", async () => {
   const formData = new FormData();
   formData.append("file", file);
   try {
-    const res = await fetch("http://localhost:8000", {
+    const res = await fetch("http://localhost:8000/upload", {
       method: "POST",
       body: formData,
     });
